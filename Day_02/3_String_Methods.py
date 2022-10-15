@@ -52,3 +52,70 @@ print(collage.upper())  # FACULTY OF ELECTRONIC ENGINEERING, EL-MENOFIA UNIVERSI
 print("TODO".lower())  # todo
 
 print("------------------------------------------------")
+
+# TODO: [8] index(str,start (in),end (ex)) fun is used to search to occurrence of char or substr return index (0-Based)
+name = "I love java"
+print(name.index("j", 0, 8))  # start default = 0 && end default all length
+
+print("------------------------------------------------")
+
+# TODO: [9] find(Substr, Start, End)  to solve error that occur when index not found str in the range
+#  return -1 if not found substr in the string
+print(name.find("j", 0, 8))
+
+print("------------------------------------------------")
+
+# TODO: [10] rjust(Require width, Fill char) & ljust(Require width, Fill char)
+#  is used to append specified *char or whitespace* to *right or left* of string
+#  with width - len
+name = "amir"
+print(name.ljust(8, "%"))  # amir%%%%
+print(name.rjust(5, "*"))  # *amir
+
+print("------------------------------------------------")
+
+# TODO: [11] splitlines() convert multiline to list
+name = """Amir
+Ibrahim
+Mahmoud"""
+print(name.splitlines())  # ['Amir', 'Ibrahim', 'Mahmoud']
+
+print("------------------------------------------------")
+
+# TODO: [12] expandtabs(num of space) is used to control num of space for tab \t
+t = "i\tlove\tjava"
+print(t.expandtabs(2))
+
+print("------------------------------------------------")
+
+# TODO: [13] Boolean Fun
+#  istitle() is has every word capital letter?
+#  isspace()
+#  islower()
+name = 'Amir'
+print(name.istitle())  # true
+
+#  isidentifier() can you use this word as a variable?
+name = 'Amir_Ibrahim-100'
+print(name.isidentifier())  # false
+
+# isalpha()   this is word contain a-z only
+name = 'amir'
+print(name.isalpha())  # true
+
+# isalnum()   this is word contain a-z and 0-9
+name = 'amir100'
+print(name.isalnum())  # true
+
+print("------------------------------------------------")
+
+# TODO: [14] replace(old value, new value, count)
+
+a = 'Hello One Two Three One One'
+print(a.replace('One', '1'))
+
+print("------------------------------------------------")
+
+# TODO: [15] <"separator".join(Iterable)> take list, tuple and return string
+myList = ['Amir', 'Ibrahim']
+print("-".join(myList))  # Amir-Ibrahim
