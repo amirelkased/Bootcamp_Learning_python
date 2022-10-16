@@ -1,4 +1,5 @@
 # TODO: [1] formatting by using '%s => string,d => number,f => floating point number'
+import locale
 
 name = 'Amir Ibrahim'
 age = 21
@@ -37,3 +38,19 @@ print("My name is: {:s}, My age is: {:d}, My Rank is: {:f}".format(name, age, ra
 
 print("My Rank with 2 number after decimal point is: {:.2f}".format(rank))
 # My Rank with 2 num after decimal point is: 100.50
+
+print("--------------------------------------------------------------------------------")
+
+# TODO: [5] Formatting Number
+#  available _ , .
+balanced = 462974060494096
+print("{:,d}".format(balanced))  # 462,974,060,494,096
+
+print("--------------------------------------------------------------------------------")
+
+# TODO: [6] Rearrange items
+a, b, c = "A", "B", 30
+print("Rearrange : {1} {2} {0}".format(a, b, c))  # Rearrange : B 30 A
+print("Rearrange : {1} {2:f} {0}".format(a, b, c))  # Rearrange : B 30.000000 A
+print("Rearrange : {1} {2:.1f} {0}".format(a, b, c))  # Rearrange : B 30.0 A
+print(f"Rearrange : {a} {c:f} {b}")  # Rearrange : A 30.000000 B
