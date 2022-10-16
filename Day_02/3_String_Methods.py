@@ -95,7 +95,7 @@ print("------------------------------------------------")
 name = 'Amir'
 print(name.istitle())  # true
 
-#  isidentifier() can you use this word as a variable?
+# isidentifier() can you use this word as a variable?
 name = 'Amir_Ibrahim-100'
 print(name.isidentifier())  # false
 
