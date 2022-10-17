@@ -16,7 +16,7 @@ print(testString[-1])  # first char from end
 # if Start not specified it start at index "0"
 # if End not specified worked to the end
 # steps by default is one else it will walk when i specified it
-# that mean when it == 1 it walk 0-1-2-3 and so on
+# that mean when it == 1 it walks 0-1-2-3 and so on
 # when i told it 2 it will walk 0-2-4-6 and so on
 
 test = "I am java developer"
