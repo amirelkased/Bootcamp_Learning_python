@@ -13,5 +13,4 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-string = 'Amir'
-print(string.ljust(8, '*'))
+
