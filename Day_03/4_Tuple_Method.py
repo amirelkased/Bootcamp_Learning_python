@@ -12,7 +12,7 @@ a, b = (1, 2, 3), (4, 5)
 c = a + b
 print(c)  # (1, 2, 3, 4, 5)
 
-# [3] Tuple, List, Sting Repeat by (*)
+# [3] Tuple, List, String Repeat by (*)
 String = 'A'
 print(String * 2)  # AA
 
